@@ -33,7 +33,7 @@ Console.WriteLine("────────────────────�
 decimal valorTotal = 0;
 foreach (var producto in productos)
 {
-    valorTotal += producto.Cantidad * producto.PrecioUnitario;
+    valorTotal += producto.CalcularValorTotal();
 }
 
 Console.WriteLine($"{"Valor total del inventario:",49} {valorTotal,12:C}");

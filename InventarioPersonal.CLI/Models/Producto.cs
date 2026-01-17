@@ -25,4 +25,10 @@ public class Producto
     {
         FechaCreacion = DateTime.Now;
     }
+
+    //Método para calcular el valor total del inventario
+    public decimal CalcularValorTotal()
+    {
+        return Cantidad * PrecioUnitario;
+    }
 }
